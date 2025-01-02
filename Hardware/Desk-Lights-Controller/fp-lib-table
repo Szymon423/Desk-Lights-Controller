@@ -1,0 +1,7 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Wago-2604-1102")(type "KiCad")(uri "${KIPRJMOD}/Library/Wago-2604/2604-1102/footprint.pretty")(options "")(descr ""))
+  (lib (name "Wago-2604-1103")(type "KiCad")(uri "${KIPRJMOD}/Library/Wago-2604/2604-1103/footprint.pretty")(options "")(descr ""))
+  (lib (name "Seeed Studio XIAO Series Library")(type "KiCad")(uri "${KIPRJMOD}/Library/Seeed Studio XIAO Series Library")(options "")(descr ""))
+  (lib (name "D2FS-FL-N")(type "KiCad")(uri "${KIPRJMOD}/Library/D2FS-FL-N/footprint.pretty")(options "")(descr ""))
+)
