@@ -1002,6 +1002,88 @@
 				)
 			)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "Relay:Relay_SPDT"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2707,12 +2789,6 @@
 		(uuid "d88a9ab3-4f92-4f8b-b07a-dc1d742c45e2")
 	)
 	(junction
-		(at 232.41 124.46)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ecfbef64-7f52-4ef0-b265-2c2e24ed2701")
-	)
-	(junction
 		(at 220.98 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2940,16 +3016,6 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 124.46) (xy 233.68 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1eb1893e-359b-4172-a780-4fff49780b68")
-	)
-	(wire
-		(pts
 			(xy 166.37 80.01) (xy 166.37 74.93)
 		)
 		(stroke
@@ -3120,7 +3186,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 121.92) (xy 232.41 124.46)
+			(xy 232.41 121.92) (xy 232.41 127)
 		)
 		(stroke
 			(width 0)
@@ -3337,16 +3403,6 @@
 			(type default)
 		)
 		(uuid "753e9454-1d01-48b5-b7f3-b2586fc98890")
-	)
-	(wire
-		(pts
-			(xy 232.41 124.46) (xy 232.41 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7652a252-9229-4653-9b60-c4684cf46bc9")
 	)
 	(wire
 		(pts
@@ -3580,16 +3636,6 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 124.46) (xy 232.41 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae2de074-f8a6-4912-a2ae-fff950c80009")
-	)
-	(wire
-		(pts
 			(xy 105.41 69.85) (xy 106.68 69.85)
 		)
 		(stroke
@@ -3677,6 +3723,16 @@
 			(type default)
 		)
 		(uuid "bc47cac7-0386-41f0-ac4f-c1bacf8303f3")
+	)
+	(wire
+		(pts
+			(xy 229.87 124.46) (xy 233.68 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0c462a1-316c-494c-b2b5-2bfb941bebdc")
 	)
 	(wire
 		(pts
@@ -4113,7 +4169,7 @@
 		)
 		(uuid "2a714404-3795-4755-a01f-e7123f151f28")
 	)
-	(label "Button-3"
+	(label "Button-2"
 		(at 115.57 130.81 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4727,6 +4783,70 @@
 			(project "Desk-Lights-Controller"
 				(path "/47eb1f8b-6a63-4f35-baca-89d8718d0a23"
 					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 115.57 181.61 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1993c12c-7916-4932-898a-bcab764c927d")
+		(property "Reference" "H2"
+			(at 118.11 180.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 118.11 182.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 115.57 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 115.57 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/47eb1f8b-6a63-4f35-baca-89d8718d0a23"
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -5501,13 +5621,13 @@
 			)
 		)
 		(pin "3"
-			(uuid "32965a5a-4785-4117-aae2-d313b10f5322")
+			(uuid "32965a5a-4785-4117-aae2-d313b10f5323")
 		)
 		(pin "2"
-			(uuid "0df456a1-5973-4794-917f-135354a619a3")
+			(uuid "0df456a1-5973-4794-917f-135354a619a4")
 		)
 		(pin "1"
-			(uuid "30f75e66-3281-4886-b769-9f4ff42ad5a2")
+			(uuid "30f75e66-3281-4886-b769-9f4ff42ad5a3")
 		)
 		(instances
 			(project ""
@@ -6541,6 +6661,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 153.67 181.61 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "71140cd9-031a-4fc6-9d0e-f29e37680c0b")
+		(property "Reference" "H4"
+			(at 156.21 180.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 156.21 182.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 153.67 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 153.67 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/47eb1f8b-6a63-4f35-baca-89d8718d0a23"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 232.41 93.98 0)
 		(unit 1)
@@ -6601,6 +6785,70 @@
 			(project "Desk-Lights-Controller"
 				(path "/47eb1f8b-6a63-4f35-baca-89d8718d0a23"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 134.62 181.61 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7987f18d-6012-4b0f-9a53-24351b44696b")
+		(property "Reference" "H3"
+			(at 137.16 180.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 137.16 182.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 134.62 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 134.62 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/47eb1f8b-6a63-4f35-baca-89d8718d0a23"
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -6869,6 +7117,70 @@
 			(project "Desk-Lights-Controller"
 				(path "/47eb1f8b-6a63-4f35-baca-89d8718d0a23"
 					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 96.52 181.61 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a6f7990-55f8-4bfc-8382-893e593ddc2f")
+		(property "Reference" "H1"
+			(at 99.06 180.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 99.06 182.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 96.52 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 96.52 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/47eb1f8b-6a63-4f35-baca-89d8718d0a23"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -8733,13 +9045,13 @@
 			)
 		)
 		(pin "3"
-			(uuid "32965a5a-4785-4117-aae2-d313b10f5322")
+			(uuid "32965a5a-4785-4117-aae2-d313b10f5324")
 		)
 		(pin "2"
-			(uuid "0df456a1-5973-4794-917f-135354a619a3")
+			(uuid "0df456a1-5973-4794-917f-135354a619a5")
 		)
 		(pin "1"
-			(uuid "30f75e66-3281-4886-b769-9f4ff42ad5a2")
+			(uuid "30f75e66-3281-4886-b769-9f4ff42ad5a4")
 		)
 		(instances
 			(project ""
@@ -8806,10 +9118,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "bab117c3-f294-400f-9df4-5f477c6dcc00")
+			(uuid "bab117c3-f294-400f-9df4-5f477c6dcc01")
 		)
 		(pin "2"
-			(uuid "abe19342-d1a1-4080-904a-7b8b434fea92")
+			(uuid "abe19342-d1a1-4080-904a-7b8b434fea93")
 		)
 		(instances
 			(project ""
